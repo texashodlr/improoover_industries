@@ -1,0 +1,10 @@
+improoover.com, www.improoover.com {
+    # Serving static homepage and blog
+    root * /var/www/domain
+    file_server
+
+    # Send /app/* to Flash/Gunicorn
+    handle_path /app/* {
+        reverse_proxy 127.0.0.1:8000
+    }
+}

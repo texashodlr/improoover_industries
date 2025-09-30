@@ -1,0 +1,1 @@
+/*Basic JS Template to be done later...*/
